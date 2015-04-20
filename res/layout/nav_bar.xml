@@ -1,0 +1,28 @@
+<com.lingyfh.editimg.NavBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg_blue_one"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/nav_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:id="@+id/nav_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+    <!--  
+    <View
+        android:layout_alignParentBottom="true"
+        style="@style/LineFillWid.Height1dp"/>
+	-->
+</com.lingyfh.editimg.NavBar>

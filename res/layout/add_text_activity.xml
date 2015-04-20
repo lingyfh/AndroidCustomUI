@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/content_framelayout"
+        android:layout_width="360dp"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg"/>
+
+        <ImageView
+            android:id="@+id/content_View"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:src="@drawable/crown"/>
+
+        <ImageView
+            android:id="@+id/rotate_view"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="160dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#aa333333"
+            android:clickable="true"
+            android:src="@drawable/push_btn"/>
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/content_framelayout"
+        android:text="save"/>
+
+    <include
+        android:id="@+id/text_color_nav"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/save_btn"
+        layout="@layout/text_color_slide"/>
+
+    <include
+        android:id="@+id/text_bg_nav"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/text_color_nav"
+        layout="@layout/nav_bar" />
+
+</RelativeLayout>
+

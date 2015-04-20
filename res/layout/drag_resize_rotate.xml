@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pushtouch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <com.lingyfh.view.DragResizeRotateView
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="@android:color/white"
+        android:id="@+id/draglayout"
+        pushtouch:image_width="200dp"
+        pushtouch:image_height="150dp"
+        pushtouch:push_image="@drawable/push_btn"
+        pushtouch:push_image_width="50dp"
+        pushtouch:push_image_height="50dp"
+        pushtouch:centerInParent="true">
+
+
+
+        <!--<FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark">
+            <View
+                android:id="@+id/drag_view"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:background="@drawable/ic_launcher"/>
+
+            <View
+                android:id="@+id/rotate_view"
+                android:layout_gravity="top|left"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp"
+                android:focusableInTouchMode="true"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:background="@drawable/push_btn"/>
+        </FrameLayout>-->
+
+        <View
+            android:id="@+id/drag_view"
+            android:layout_height="25dp"
+            android:layout_width="25dp"
+            android:background="@drawable/ic_launcher"/>
+
+        <!--<View
+            android:id="@+id/drag_view"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="请输入内容"
+            android:textColor="@android:color/black"
+            android:focusable="true"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:orientation="vertical"
+            android:background="#AD78CC"/>-->
+
+        <View
+            android:id="@+id/rotate_view"
+            android:layout_gravity="top|left"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:focusableInTouchMode="true"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:background="@drawable/push_btn"/>
+
+    </com.lingyfh.view.DragResizeRotateView>
+</LinearLayout>
+

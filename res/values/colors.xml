@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <!-- 各个版块配色 -->
+    <color name="main_home">#ec6838</color>
+    <color name="main_wallpaper">#fed953</color>
+    <color name="main_livewallpaper">#49b033</color>
+    <color name="main_screenlocker">#25bed1</color>
+    <color name="main_ringtone">#f14251</color>
+    <color name="main_application">#2c9ae3</color>
+
+    <!-- 各个选中，按下配色 -->
+    <color name="main_home_pressed">#e85a28</color>
+    <color name="main_wallpaper_pressed">#f77e00</color>
+    <color name="main_wallpaper_pressed_btn">#ea7502</color>
+    <color name="main_livewallpaper_pressed">#439a31</color>
+    <color name="main_livewallpaper_pressed_btn">#1c7901</color>
+    <color name="main_screenlocker_pressed">#22aabb</color>
+    <color name="main_ringtone_pressed">#e04552</color>
+    <color name="main_ringtone_pressed_btn">#c62f3c</color>
+    <color name="main_application_pressed">#258cd1</color>
+    <color name="album_item_pressed">#f1f1f1</color>
+
+    <!-- 阴影颜色值 -->
+    <color name="shadow">#08000000</color>
+
+    <!-- 紧急提示位颜色值 -->
+    <color name="warn_color">#fdecac</color>
+
+    <!-- 搜索热词颜色 -->
+    <color name="search_hot_keyword_color">#ec6838</color>
+
+    <!-- 通用颜色方案 -->
+    <color name="yellow">#fed953</color>
+    <color name="bg_head">#f9f9f9</color>
+    <color name="bg_content">#efeff4</color>
+    <color name="bg_item">#ffffff</color>
+    <color name="bg_bottom">#f3f3f3</color>
+    <color name="lw_bg_bottom">#f8f8f8</color>
+    <!-- 壁纸预设图背景 -->
+    <!--<color name="wallpaper_loading_bg">#c7e2dd</color>-->
+    <color name="wallpaper_loading_bg">#eceaf2</color>
+
+    <!-- footer 没有更多了，背景 -->
+    <color name="footer_bo_more_bg">#eceaf2</color>
+
+    <color name="text_main">#000000</color>
+    <color name="text_title">#333333</color>
+    <color name="text_content">#666666</color>
+    <color name="text_desc">#999999</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_third_lw">#ec6838</color>
+    <color name="text_blue">#28b6ff</color>
+
+    <color name="link">#0075e5</color>
+
+    <color name="line_light">#e9e9e9</color>
+    <color name="line_filter">#e7e7e7</color>
+    <color name="line_deep">#dddde3</color>
+    <color name="detail_page_line">#e9e9e9</color>
+    
+    <color name="line_alpha">#4cffffff</color>
+    <color name="stroke">#dddde3</color>
+
+    <color name="pressed">#eeeeee</color>
+
+    <color name="text_shadow">#62000000</color>
+
+    <color name="user_cover">#4c000000</color>
+
+    <color name="black_10_transparent">#1F000000</color>
+    <color name="black_20_transparent">#33000000</color>
+    <color name="black_60_transparent">#99000000</color>
+    <color name="black_30_transparent">#40000000</color>
+    <color name="black_70_transparent">#a0000000</color>
+    <color name="black_80_transparent">#cc000000</color>
+    <color name="white_60_transparent">#99ffffff</color>
+    <color name="white_80_transparent">#ccffffff</color>
+    <color name="WHITE">#ffffff</color>
+    <color name="BLACK">#000000</color>
+    <color name="gray">#333333</color>
+    <color name="gray_mid">#666666</color>
+    <color name="gray_selected">#999999</color>
+    <color name="download_selected">#e3e3e3</color>
+    <color name="half_transparent">#80000000</color>
+    <color name="percent_9_white">#e6ffffff</color>
+    <color name="less_transparent">#bb000000</color>
+    <color name="quad_transparent">#40000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#0075e5</color>
+    <color name="bg_blue_one">#45bfce</color>
+    <color name="sl_selector_blue_one">#0594a4</color>
+    <color name="GRAY_81">#dedede</color>
+    <color name="GRAY_31">#8D8D8E</color>
+    <color name="sl_text_black_two">#31373a</color>
+    <color name="sl_text_black_three">#565656</color>
+    <color name="sl_text_red_one">#c11111</color>
+    <color name="sl_bg_white_one">#e0e0e0</color>
+    <color name="sl_line_blue_one">#0494a4</color>
+
+    <!-- Slide Menu -->
+    <color name="selected_dark_one">#ff262a2d</color>
+    <color name="sm_portrait_line_one">#e85a28</color>
+    <color name="sm_portrait_line_two">#fd8231</color>
+    <color name="sm_portrait_line_three">#ffa403</color>
+    <color name="sm_portrait_line_four">#fecd4a</color>
+    <color name="sm_divide_line">#dddde3</color>
+    <color name="sm_divide_area">#ebebeb</color>
+    <color name="sm_default_layout">#f7f7f7</color>
+    <color name="sm_selected_layout">#e9e9e9</color>
+    <color name="sm_default_text">#666666</color>
+
+    <!-- 友盟 -->
+    <color name="um_grey_background">#f3f3f3</color>
+    <color name="um_black">#000000</color>
+    <color name="um_item_grey">#f1efed</color>
+    <color name="um_grey_line">#dcd8d4</color>
+
+    <!-- guide -->
+     <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+    <color name="lw_help_link">#fc8800</color>
+    <color name="upgrade_btn_normal">#12c079</color>
+    <color name="upgrade_btn_press">#ffc079</color>
+    <color name="select_all_btn">#dbdbdb</color>
+
+
+
+
+    <!-- slock screen -->
+    <color name="sl_content_title">#bcbcbb</color>
+    <color name="sl_content_content">#bfffffff</color>
+    <color name="fav_btn_title">#d14410</color>
+    <color name="sl_image_bg">#0e1625</color>
+
+    <color name="bg_white_two">#f8f6f7</color>
+    <color name="line_two">#cfcfcf</color>
+    <color name="elv_popup_text_color">#FFFFFF</color>
+    <color name="elv_separator_color">#BBBBBB</color>
+    <color name="text_black_one">#01424a</color>
+    <color name="elv_popup_bg_color">#EE666666</color>
+    <color name="elv_btn_normal">#00000000</color>
+    <color name="line_deep_transparent">#40dddde3</color>
+    <color name="elv_btn_focused">#ff0099cc</color>
+    <color name="elv_btn_pressed">#ff33b5e5</color>
+    <color name="disable_home_lock_btn">#f2f1f1</color>
+    <color name="disable_home_lock_btn_press">#ebe9e9</color>
+    <color name="home_lock_text_disable">#c6c5c5</color>
+    
+    <color name="comment_post_btn">#f17246</color>
+    <color name="sl_blue_bg">#59f9e8</color>
+
+    <color name="notify_bg">#2e000000</color>
+    <color name="notify_vertical_line">#59ffffff</color>
+    <color name="notify_tip_bg">#4cffffff</color>
+
+
+    <color name="gplus_color_1">#ffcd7c</color>
+    <color name="gplus_color_2">#e2672e</color>
+    <color name="gplus_color_3">#77b8ac</color>
+    <color name="gplus_color_4">#accf99</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+    <color name="unfav_album_text">#bababa</color>
+    <color name="unfav_album_bg">#f0f0f0</color>
+    <color name="unfav_album_bg_press">#a0a0a0</color>
+
+    <color name="sl_album_guide_btn_text">#888475</color>
+
+    <color name="white_50">#7fffffff</color>
+
+    <color name="select_guide_bg">#fed953</color>
+    <color name="select_guide_btn">#222222</color>
+    <color name="ugc_bottom_bg">#191919</color>
+</resources>
