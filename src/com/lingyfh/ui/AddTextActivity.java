@@ -1,12 +1,18 @@
 package com.lingyfh.ui;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
+import com.lingyfh.editimg.DeviceUtil;
 import com.lingyfh.editimg.NavBar;
 import com.lingyfh.editimg.TabView;
 import com.lingyfh.editimg.TextTabBean;
@@ -37,6 +43,8 @@ public class AddTextActivity extends Activity {
 	private int mDefaultWidth = 600;
 	private float mScale;
 
+	private PopupWindow mPopupWindow;
+
 	@Override
 	protected void onResume() {
 		super.onResume();
@@ -65,6 +73,7 @@ public class AddTextActivity extends Activity {
 			}
 		});
 		initView();
+		initSeekBar();
 	}
 
 
@@ -95,6 +104,65 @@ public class AddTextActivity extends Activity {
 		});
 
 		mNavBar.setCurrentTab(0);
+
+
+	}
+
+	public void showPopWindow(View view) {
+		if (mPopupWindow != null && mPopupWindow.isShowing()) {
+			return;
+		}
+		LayoutInflater inflater = (LayoutInflater) this
+				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		//Inflate the view from a predefined XML layout
+		View layout = inflater.inflate(R.layout.seekbar_thum_layout,  null);
+		// create a 300px width and 470px height PopupWindow
+		mPopupWindow = new PopupWindow(layout, 200, 200);
+		// display the popup in the center
+
+		int[] location = new int[2];
+		view.getLocationOnScreen(location);
+
+		mPopupWindow.showAtLocation(view, Gravity.NO_GRAVITY, location[0], location[1]-mPopupWindow.getHeight());
+	}
+
+	private void initSeekBar() {
+
+
+
+		SeekBar seekbar = (SeekBar) findViewById(R.id.text_seekbar);
+		seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress,
+										  boolean fromUser) {
+				if (mPopupWindow != null) {
+					int[] location = new int[2];
+					seekBar.getLocationOnScreen(location);
+					int displayW = DeviceUtil.getDisplayW(AddTextActivity.this);
+					int seekBarW = displayW - DeviceUtil.dip2px(AddTextActivity.this, 60);
+					float moveScale = (float)progress/100.0f;
+					float moveX = seekBarW*moveScale;
+					mPopupWindow.update(location[0]+ (int)moveX, location[1]-mPopupWindow.getHeight(), -1, -1, true);
+				}
+
+				LogUtil.i(tag, "onProgressChanged progress = " + progress
+						+ " fromUser = " + fromUser + " seekBar = " + seekBar);
+			}
+
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				LogUtil.i(tag, "onStartTrackingTouch");
+				showPopWindow(seekBar);
+			}
+
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				LogUtil.i(tag, "onStopTrackingTouch");
+				if (mPopupWindow != null && mPopupWindow.isShowing()) {
+					mPopupWindow.dismiss();
+				}
+			}
+		});
 	}
 
 
